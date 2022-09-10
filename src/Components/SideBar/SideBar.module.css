@@ -1,0 +1,90 @@
+.smallCalendar__row{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width:300px;
+}
+
+
+
+.day__btn{
+    width: 40px;
+    background-color: white;
+    border: 1px solid lightgray;
+    cursor: pointer;
+
+}
+
+.current_day{
+    background-color: lightgray;
+}
+
+.smallCalendar__container{
+    position: absolute;
+    margin-top:70px;
+    background-color: white;
+}
+
+.sideBar{
+    font-size:20px;
+    position: absolute;
+    margin-left: 20px;
+
+}
+
+.label{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 10px;
+}
+.label__item{
+    margin-right: 20px;
+}
+
+.add__btn{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-top: 10px;
+
+}
+
+.add__btn img:hover{
+    background-color: lightgray;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.btn_calend{
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn_calend:hover{
+    background-color: lightgray;
+}
+
+.nav{
+    display: flex;
+
+}
+
+.form__calendar{
+    background-color: white;
+    cursor: pointer;
+    border: none;
+
+    margin-left:10px;
+    margin-top: 10px;
+
+
+}
+
+.form__calendar:hover{
+    background-color: lightgray;
+
+}

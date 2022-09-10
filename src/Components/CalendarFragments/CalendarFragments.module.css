@@ -1,0 +1,40 @@
+.calendar__month{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.calendar__container{
+
+}
+
+.calendar__day{
+    padding-bottom:5vw;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    border: 1px solid lightgray;
+
+}
+
+.calendar__day__number{
+
+}
+.calendar__day__title{
+    margin-bottom: 10px;
+}
+.title{
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    margin-top:2px;
+}
+
+.current_day{
+    background-color: #1abd1a;
+    width: 20px;
+    margin: 0 auto;
+    padding: 2px;
+    border-radius: 100%;
+}

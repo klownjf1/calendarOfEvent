@@ -1,0 +1,27 @@
+.header__container{
+    width: 1250px;
+    margin: 0 auto;
+    margin-top:100px;
+    margin-bottom: 50px;
+
+}
+
+.header__button{
+    width: 70px;
+    height: 20px;
+    cursor: pointer;
+    background-color: white;
+    border: lightgray;
+
+}
+
+.header__buttons__calendar{
+    height: 10px;
+}
+
+.header__buttons{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}

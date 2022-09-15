@@ -1,11 +1,16 @@
 import React, {useEffect, useReducer, useState} from 'react';
 import GlobalContext from "./GlobalContext";
 import dayjs from "dayjs";
+import {any} from "prop-types";
 const pushEvent = 'PUSH-EVENT'
 const updateEvent = 'UPDATE-EVENT'
 const deleteEvent = 'DELETE-EVENT'
 
 const saveEventReducer = (state, {type, payload}) => {
+
+
+
+
     switch (type){
         case pushEvent:
             return [...state, payload]
@@ -52,6 +57,10 @@ const ContextWrapper = (props) => {
             setSelectedEvent(null)
         }
     }, [openEventModal])
+
+    ContextWrapper.propTypes = {
+        children: any
+    }
 
     return (
         <GlobalContext.Provider value={{

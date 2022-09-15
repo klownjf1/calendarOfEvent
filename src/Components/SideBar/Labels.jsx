@@ -1,12 +1,11 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext} from 'react';
 import GlobalContext from "../../Context/GlobalContext";
 import dayjs from "dayjs";
 import s from './SideBar.module.css'
-import calendar from "../../assets/calendar.png";
-import SmallCalendar from "./SmallCalendar";
+
 
 const Labels = () => {
-    const {saveEvents, setSelectedEvent} = useContext(GlobalContext)
+    const {saveEvents} = useContext(GlobalContext)
 
     return (
         <div>

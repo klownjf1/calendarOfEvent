@@ -1,4 +1,4 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext} from 'react';
 import GlobalContext from "../../Context/GlobalContext";
 import add from '../../assets/add.png'
 import s from './SideBar.module.css'

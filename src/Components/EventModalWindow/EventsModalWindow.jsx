@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React, {useContext, useState} from 'react';
 import s from './EventsModal.module.css'
 import GlobalContext from "../../Context/GlobalContext";
 import x from '../../assets/x.png'

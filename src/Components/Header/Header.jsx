@@ -1,15 +1,14 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext} from 'react';
 import GlobalContext from "../../Context/GlobalContext";
 import dayjs from "dayjs";
 import s from './Header.module.css'
 import leftArrow from '../../assets/left-arrow.png'
 import rightArrow from '../../assets/right-arrows.png'
-import SmallCalendar from "../SideBar/SmallCalendar";
+
 
 
 const Header = () => {
     const {monthIndex, setMonthIndex} = useContext(GlobalContext)
-    const [isShowSmallCalendar, setIsShowSmallCalendar] = useState(false)
 
     const prevMonthClick = () => {
         setMonthIndex(monthIndex - 1)

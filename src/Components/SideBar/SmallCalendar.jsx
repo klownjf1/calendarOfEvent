@@ -25,7 +25,6 @@ const SmallCalendar = () => {
 
     const {
         monthIndex,
-        smallCalendarMonth,
         setSmallCalendarMonth,
         selectedDay,
         setSelectedDay

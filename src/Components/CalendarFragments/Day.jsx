@@ -2,12 +2,19 @@ import React, {useContext, useEffect, useState} from 'react';
 import s from './CalendarFragments.module.css'
 import dayjs from "dayjs";
 import GlobalContext from "../../Context/GlobalContext";
+import {number,object} from "prop-types";
+
+
 
 const Day = ({day, rowIndex}) => {
 
+    Day.propTypes = {
+        day: object,
+        rowIndex: number
+    };
 
     const [dayEvents, setDayEvents] = useState([])
-    const {setSelectedDay, setOpenEventModal, saveEvents, selectedEvent, setSelectedEvent} = useContext(GlobalContext)
+    const {setSelectedDay, setOpenEventModal, saveEvents, setSelectedEvent} = useContext(GlobalContext)
 
 
     useEffect(() => {
